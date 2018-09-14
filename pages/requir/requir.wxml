@@ -1,0 +1,6 @@
+<view class='yuansu'>
+<navigator url='/pages/dqkd/dqkd'>带饭带快递</navigator>
+<navigator>求带饭求带快递</navigator>
+<navigator>出售物品</navigator>
+<navigator>购买物品</navigator>
+</view>

@@ -1,0 +1,13 @@
+.photo{
+  width: 430rpx;
+  height: 375rpx;
+  border-radius: 50%;
+}
+
+.navicolor{
+  color:green;
+}
+
+.coloring{
+  color: red;
+}
