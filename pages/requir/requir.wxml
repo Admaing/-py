@@ -1,6 +1,38 @@
-<view class='yuansu'>
-<navigator url='/pages/dqkd/dqkd'>带饭带快递</navigator>
-<navigator>求带饭求带快递</navigator>
-<navigator>出售物品</navigator>
-<navigator>购买物品</navigator>
+<view class="content">
+  <view class="common">
+    <view class="hr">
+      <text>发布任务</text>
+    </view>
+    <form bindsubmit="submitdate">
+      <view class="order">
+        <view class="date">
+          <image src="/images/1.png"> </image>
+          <input name="date" value='{{information}}' placeholder="{{informations.time}}" placeholder-style="color:#eee" />
+        </view>
+        <view class="hr" style="margin-top:20rpx;margin-bottom:20rpx;"></view>
+        <view class="date">
+          <image src="/images/1.png"></image>
+          <input name="username" value='{{username}}' placeholder="{{informations.contacts}}" placeholder-style="color:#eee" />
+        </view>
+        <view class="hr" style="margin-top:20rpx;margin-bottom:20rpx;"></view>
+        <view class="date">
+          <image src="/images/1.png"></image>
+          <input name="phone" value='{{phone}}' placeholder="{{informations.phone}}" placeholder-style="color:#eee" type='number' />
+        </view>
+        <view class="hr" style="margin-top:20rpx;margin-bottom:20rpx;"></view>
+        <view class="date">
+          <image src="/images/1.png"> </image>
+          <input name="address" value='{{address}}' placeholder="{{informations.address}}" placeholder-style="color:#eee" />
+        </view>
+        <view class="hr" style="margin-top:20rpx;margin-bottom:20rpx;"></view>
+        <view class="date">
+          <image src="/images/1.png"> </image>
+          <input name="other" value='{{information}}' placeholder="{{informations.yangshi}}" placeholder-style="color:#eee" />
+        </view>
+        <view class="hr" style="margin-top:20rpx;margin-bottom:20rpx;">
+        </view>
+        <button form-type="submit">确认提交</button>
+      </view>
+    </form>
+  </view>
 </view>

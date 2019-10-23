@@ -4,16 +4,18 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"autoAudits": false
 	},
+	"cloudfunctionRoot": "cloudfunctions/",
 	"compileType": "miniprogram",
-	"libVersion": "2.0.4",
-	"appid": "wx6b6fb78014b06df9",
-	"projectname": "aaa",
+	"libVersion": "2.5.2",
+	"appid": "wxb3f10259e8a20499",
+	"projectname": "%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

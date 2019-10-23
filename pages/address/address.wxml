@@ -1,0 +1,30 @@
+<view class="content">
+  <view class="common">
+    <view class="hr">
+      <text>我的信息(提交成功后将使用该地址)</text>
+    </view>
+    <form bindsubmit="submitdate">
+      <view class="order">
+        <view class="hr" style="margin-top:20rpx;margin-bottom:20rpx;"></view>
+        <view class="date">
+          <image src="/images/1.png"></image>
+          <input name="username" value='{{information}}' placeholder="请输入预定的人....." placeholder-style="color:#eee" />
+        </view>
+        <view class="hr" style="margin-top:20rpx;margin-bottom:20rpx;"></view>
+        <view class="date">
+          <image src="/images/1.png"></image>
+          <input name="phone" value='{{information}}' placeholder="请输入预定电话" placeholder-style="color:#eee" type='number' />
+        </view>
+        <view class="hr" style="margin-top:20rpx;margin-bottom:20rpx;"></view>
+        <view class="date">
+          <image src="/images/1.png"> </image>
+          <input name="address" value='{{information}}' placeholder="请输入预定的地址（6#333）" placeholder-style="color:#eee" />
+        </view>
+
+        <view class="hr" style="margin-top:20rpx;margin-bottom:20rpx;">
+        </view>
+        <button form-type="submit">确认提交</button>
+      </view>
+    </form>
+  </view>
+</view>

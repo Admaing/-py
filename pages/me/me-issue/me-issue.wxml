@@ -1,4 +1,4 @@
-<view class="content" wx:for='{{userList}}' wx:for-index='keys'>
+<view class="content" wx:for='{{userList}}' >
   <view class="classname">预约信息</view>
   <view class="classname">预约日期：
     <text>{{item.datee}}</text>
@@ -15,9 +15,8 @@
   <view class="classname">其他备注信息：
     <text>{{item.other}}</text>
   </view>
-  <button class='button' catchtap="a" data-postid='{{keys}}'>领取任务</button>
+  <button catchtap='deleted' data-postid='{{item._id}}'>删除</button>
 </view>
-
 <view hidden='{{hidden}}'>
-暂时没有更多订单（下拉刷新）
+暂时还未接单
 </view>

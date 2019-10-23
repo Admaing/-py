@@ -1,3 +1,46 @@
 {
-  "pages":["pages/about/about","pages/requir/requir","pages/dqkd/dqkd"]
+  "cloud": true,
+  "pages": ["pages/about/about",
+    "pages/dqkd/dqkd",
+    
+   
+   
+ 
+    "pages/requir/requir",
+    "pages/mytask/mytask",
+    "pages/me/me",
+    "pages/me/me-issue/me-issue",
+    "pages/me/me-order/me-order",
+    "pages/address/address"
+  ],
+  "tabBar": {
+    "color": "#b3d4db",
+    "selectedColor": "#b3d4db",
+    "list": [
+      {
+        "pagePath": "pages/requir/requir",
+        "text": "发布",
+        "iconPath": "images/4.png",
+        "selectedIconPath": "images/5.png"
+      },
+      {
+        "pagePath": "pages/dqkd/dqkd",
+        "text": "领取",
+        "iconPath": "images/3.png",
+        "selectedIconPath": "images/22.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我",
+        "iconPath": "images/2.png",
+        "selectedIconPath": "images/1.png"
+      }
+    ]
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#b3d4db",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "大学生互助平台",
+    "backgroundColor": "#FFF8DC"
+  }
 }

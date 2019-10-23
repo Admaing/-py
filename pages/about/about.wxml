@@ -1,7 +1,5 @@
-<view class='yuansu'>
-<image src="/images/platform.jpg" class='photo'></image>
-<text style='font-weight:bold;font-size:60rpx'>大学生互助平台</text>
+<view class='yuansu' >
+<image src='/images/platform.jpg' class='photo'></image>
 <text>大连民族大学</text>
-<navigator url='/pages/requir/requir' open-type='redirect' class='navicolor' hover-class='coloring'>点我进入</navigator>
 <text>联系方式：***********</text>
 </view>

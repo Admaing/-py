@@ -1,1 +1,10 @@
-Page({})//注册页面对象
+Page({
+
+})
+
+setTimeout(function(event) {
+  wx.switchTab({
+
+    url: '/pages/requir/requir',
+  })
+}, 1500)

@@ -1,4 +1,4 @@
-/*.yuansu{
+/* pages/me/me-issue/me-issue.wxss *//*.yuansu{
   background-color:azure;
   height: 100vh;
   display: flex;
@@ -13,8 +13,9 @@
   justify-content: center; 
   align-items: left; 
   margin-top: 20rpx;
-  border-bottom: 1px solid greenyellow;
-  border-top: 1px solid greenyellow;
+  
+  border-bottom: 1px solid;
+  border-top: 1px solid ;
 }
 .classname{
   margin-top:20rpx;
@@ -23,9 +24,4 @@
 .zh{
   display: flex;
   flex-direction: row
-}
-
-.button{
-  color: green;
-  width: 100%;
 }
