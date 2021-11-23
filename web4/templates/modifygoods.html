@@ -1,0 +1,150 @@
+$def with (a)
+
+	
+
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Champion Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="static/css/bootstrap1.css" rel="stylesheet" type="text/css" media="all" />
+<link href="static/css/style2.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="static/js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<!-- for-gallery-rotation -->
+<script src="static/js/modernizr.custom.97074.js"></script>
+<!-- //for-gallery-rotation -->
+<!-- FlexSlider -->
+<link rel="stylesheet" href="static/css/flexslider1.css" type="text/css" media="screen" />
+<script defer src="static/js/jquery.flexslider1.js"></script>
+
+<!-- //FlexSlider -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="static/js/move-top.js"></script>
+<script type="text/javascript" src="static/js/easing.js"></script>
+
+<!-- start-smoth-scrolling -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Comfortaa:400,300,700' rel='stylesheet' type='text/css'>
+
+<script type="text/JavaScript" src="F:\Pycharm code\web\templates\jquery-3.4.1.js"></script>
+<script type="text/javascript" src="F:\Pycharm code\web\templates\jquery.form.min.js"></script>
+<script type="text/javascript" src="F:\Pycharm code\web\templates\jquery.cookie.js"></script>
+<style>
+#content{
+	background-color: rgba(255, 255, 255, 0.7);
+    width: 250px;
+    height: 350px;
+    border: 1px solid black;
+	margin-top:200px;
+	text-align:center;
+	margin-left:600px
+
+}
+
+body{
+	background-image:url('static/images/banner8.jpg');
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+.div3{
+	margin-top:150px;
+	margin-left:600px;
+}
+
+.div4{
+	margin-left:10px;
+	margin-top:20px;
+}
+</style>
+ <div class="header">
+		<div class="container">
+			<div class="header-nav">
+				<nav class="navbar navbar-default">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+						<div class="logo">
+							<a class="navbar-brand" href="/system">System<span>Make You Be Better</span></a>
+						</div>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					 <ul class="nav navbar-nav">
+						<li class="hvr-sweep-to-bottom active"><a href="/system">Home</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="/proorder" class="scroll">Processing</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="/lookgoods" class="scroll">View number of items</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="/comorder" class="scroll">Completed</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="/noprocess" class="scroll">Noprocessed</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="/nopay" class="scroll">Nopay</a></li>
+					  </ul>
+					</div><!-- /.navbar-collapse -->
+				</nav>
+			</div>
+		</div>
+	</div>
+<div id = "content">
+<div class="div1">
+	<div class="div4">
+	<strong>
+<form action="/addgoods" method="post">
+	<div id="content1">
+								<div class="styled-input agile-styled-input-top">
+									<input type="text" value="" name="classifynum" required="">
+									<label>Type of commodity</label>
+									<span></span>
+								</div>
+
+								<div class="styled-input agile-styled-input-top">
+									<input type="text" name="xingming" required="">
+									<label>Trade Name</label>
+									<span></span>
+								</div>
+								<br>
+								<select name = "facnum">
+									$for zz in a:
+										<option value="$zz.facnum">$zz.facnum</option>
+								</select>
+								<label>Type of shopping mall</label>
+									<span></span>
+								<br>
+								
+								<select name = "unitfee">
+									$for y in range(1,100):
+										<option value="$y">$y</option>
+								</select>
+								<label>Unit price of goods</label>
+									<span></span>
+									<br>
+								<select name = "num">
+									$for xx in range(1,100):
+										<option value="$xx">$xx</option>
+								</select>
+								<label>Number of commodities</label>
+									<span></span>
+								<br>
+
+								<br>
+								<input type="submit" value="Add"/>
+								<br>
+								</div>
+	
+	
+	</form>
+	</strong>
+	</div>
+	</div>
+	</div>
+	</body>
+	
+	

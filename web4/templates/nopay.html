@@ -1,0 +1,149 @@
+$def with (dingdan,dingdanxiangqing)
+
+
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Champion Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="static/css/bootstrap1.css" rel="stylesheet" type="text/css" media="all" />
+<link href="static/css/style2.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="static/js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<!-- for-gallery-rotation -->
+<script src="static/js/modernizr.custom.97074.js"></script>
+<!-- //for-gallery-rotation -->
+<!-- FlexSlider -->
+<link rel="stylesheet" href="static/css/flexslider1.css" type="text/css" media="screen" />
+<script defer src="static/js/jquery.flexslider1.js"></script>
+
+<!-- //FlexSlider -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="static/js/move-top.js"></script>
+<script type="text/javascript" src="static/js/easing.js"></script>
+
+<!-- start-smoth-scrolling -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Comfortaa:400,300,700' rel='stylesheet' type='text/css'>
+
+<script type="text/JavaScript" src="F:\Pycharm code\web\templates\jquery-3.4.1.js"></script>
+<script type="text/javascript" src="F:\Pycharm code\web\templates\jquery.form.min.js"></script>
+<script type="text/javascript" src="F:\Pycharm code\web\templates\jquery.cookie.js"></script>
+<body>
+<style>
+body{
+	background-image:url('static/images/banner8.jpg');
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+.div1 {
+    width: 300px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.7);
+	margin-left:30px;
+	border-color:black;
+	margin-top: 30px;
+
+}
+.div2 {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.div3{
+	margin-top:150px;
+	margin-left:600px;
+}
+.div4{
+	margin-left:20px;
+	margin-top:20px;
+	color:black;
+}
+</style>
+<script >
+				function first(){
+					alert('pay successful');
+					window.location.href='/user';
+	
+					}
+				function countDown(){
+	
+				
+				setTimeout("location.href='/system'",0);
+		}
+		
+	</script>
+  <script>
+      //var w = jQuery.cookie('the_cookie');
+  </script>
+  <div class="header">
+		<div class="container">
+			<div class="header-nav">
+				<nav class="navbar navbar-default">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+						<div class="logo">
+							<a class="navbar-brand" href="/system">System<span>Make You Be Better</span></a>
+						</div>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					 <ul class="nav navbar-nav">
+						<li class="hvr-sweep-to-bottom active"><a href="/system">Home</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="/proorder" class="scroll">Processing</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="/lookgoods" class="scroll">View number of items</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="/comorder" class="scroll">Completed</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="/noprocess" class="scroll">Noprocessed</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="/nopay" class="scroll">Nopay</a></li>
+					  </ul>
+					</div><!-- /.navbar-collapse -->
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class = "div2">
+	:
+		<br>
+		$for i in dingdan:
+			<div class="div1">
+			<div class="div4">
+			<strong>
+			<h3>Order Information</h3>
+			<br>
+			Order Date:$i.orddate
+			<br>
+			Order No.:<input type="text" readonly="readonly" value="$i.ordnum" name="ordnum">
+			<br>
+			Order Details No.:<input type="text" value="$i.detailnum" disabled="disabled" name="detailnum"/>
+			<br>
+			Type of commodity:<input type="text" disabled="disabled" value="$i.classifynum" name="classifynum"/>
+			<br>
+			Factory ID:<input type="text" disabled="disabled" value="$i.facname" name ="facname"/>
+			<br>
+			Remaining amount:<input type="text" disabled="disabled" value="$i.num" name="num" />
+			<br>
+			Total cost:<input type="text" disabled="disabled" value="$i.sumfee" name="sumfee"/>
+			<br>
+			Trade name:<input type="text" disabled="disabled" value="$i.feelist" name ="feelist"/>
+			<br>
+			<br>
+			</strong>
+			</div>
+			</div>
+		
+		</div>
+		<div style="text-align:center;">
+		<button onclick="countDown()">back</button>
+		</div>
+</body>

@@ -1,0 +1,160 @@
+$def with (s,d)
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Champion Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="static/css/bootstrap1.css" rel="stylesheet" type="text/css" media="all" />
+<link href="static/css/style2.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="static/js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<!-- for-gallery-rotation -->
+<script src="static/js/modernizr.custom.97074.js"></script>
+<!-- //for-gallery-rotation -->
+<!-- FlexSlider -->
+<link rel="stylesheet" href="static/css/flexslider1.css" type="text/css" media="screen" />
+<script defer src="static/js/jquery.flexslider1.js"></script>
+
+<!-- //FlexSlider -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="static/js/move-top.js"></script>
+<script type="text/javascript" src="static/js/easing.js"></script>
+
+<!-- start-smoth-scrolling -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Comfortaa:400,300,700' rel='stylesheet' type='text/css'>
+
+<script type="text/JavaScript" src="F:\Pycharm code\web\templates\jquery-3.4.1.js"></script>
+<script type="text/javascript" src="F:\Pycharm code\web\templates\jquery.form.min.js"></script>
+<script type="text/javascript" src="F:\Pycharm code\web\templates\jquery.cookie.js"></script>
+<body>
+<style>
+body{
+	background-image:url('static/images/banner8.jpg');
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+.div1 {
+    width: 300px;
+    height: 330px;
+    background-color: rgba(255, 255, 255, 0.7);
+	margin-left:30px;
+	margin-top: 30px;
+	border-color:black;
+}
+.div2{
+	width: 60px;
+	height: 40px;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+.div4{
+	display: flex;
+	flex-wrap: wrap;
+}
+</style>
+  <script>
+      //var w = jQuery.cookie('the_cookie');
+  </script>
+  <div class="header">
+		<div class="container">
+			<div class="header-nav">
+				<nav class="navbar navbar-default">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+						<div class="logo">
+							<a class="navbar-brand" href="/system">System<span>Make You Be Better</span></a>
+						</div>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					 <ul class="nav navbar-nav">
+						<li class="hvr-sweep-to-bottom active"><a href="/system">Home</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="/proorder" class="scroll">Processing</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="/lookgoods" class="scroll">View number of items</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="/comorder" class="scroll">Completed</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="/noprocess" class="scroll">Noprocessed</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="/nopay" class="scroll">Nopay</a></li>
+					  </ul>
+					</div><!-- /.navbar-collapse -->
+				</nav>
+			</div>
+		</div>
+	</div>
+<script>
+	function dingdan(){
+		//alert("already");
+		setTimeout("location.href='/update'",0);
+	}
+	
+</script>
+
+<div style="font-size: 20px; text-align: center;">
+ <strong><a class="div2" href="/modifygoods" style="color: black;">add goods</a></strong>
+</div>
+<div class="div4">
+$for i in s:
+	<br>
+	<div class="div1">
+	<form action="/update" method="post">
+	<br>
+	Trade name:<input type="text" value="$i.xingming" name ="xingming" readonly="readonly"/>
+    <br>
+	Factory ID:<input type="text" value="$i.facnum" readonly="readonly"/>	
+	<br>
+	Unit price of goods:<input type="text" value="$i.unitfee" readonly="readonly"/>
+	<br>
+	Remaining amount:<input type="ratio" value="$i.num" name="1num" readonly="readonly"/>
+	<br>
+	Type of commodity:<input type="ratio" value="$i.classifynum" readonly="readonly"/>
+	<br>
+	Number of requirements:
+	<select name="num">
+	$for z in range(100):
+		<option value="$z">$z</option>
+	</select>
+	<br>
+	<br>
+	<input type="submit" value="Replenishment" />
+	<br>
+	</form>
+	<form action="/delete" method="post">
+		
+	<input style="display:none;" value="$i.xingming" name ="xingming1"/>
+	<input type="submit" value="Delete Good" />
+	</form>
+	</div>
+<div>
+<br>
+<br>
+<!--
+<div style="text-align:center;">
+<form action="/update" method="post">
+Trade name:
+<select name="xingming">
+$for x in d:
+	<option value="$x.xingming">$x.xingming</option>
+    
+</select>
+ Number of requirements:
+<select name="num">
+$for z in range(100):
+	<option value="$z">$z</option>
+</select>
+<br>
+<br>
+
+<input type="submit" value="Replenishment" />
+</div>
+-->
+</div>
+</body>

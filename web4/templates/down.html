@@ -1,0 +1,81 @@
+$def with (i, kehu, goods, gonghuo,dingdanhao,yunfee,num,shijian,pay)
+<body>
+<script >
+			function first(){
+
+				setTimeout("location.href='/goods'",0);
+
+				}
+			function countDown(){
+
+			alert('pay successful!In three seconds, we are heading to Goodes.');
+			setTimeout("location.href='/goods'",0);
+                //setTimeout("location.href='index.html'",3000);
+	}
+</script>
+<style>
+#content{
+	background-color: rgba(255, 255, 255, 0.7);
+    width: 220px;
+    height: 350px;
+    border: 1px solid black;
+	margin-top:200px;
+	text-align:center;
+	margin-left:600px
+
+}
+body
+{
+	background-image:url('static/images/vs-bg.jpg');
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+
+.div3{
+	margin-top:150px;
+	margin-left:600px;
+}
+
+.div4{
+	margin-left:10px;
+	margin-top:20px;
+}
+</style>
+<div id = "content">
+<div class="div1">
+	<div class="div4">
+	<strong>
+		
+		<h3>Order Information</h3>
+		<br>
+		Order Date:$shijian
+		<br>
+		Customer code: $kehu.cuscode
+		<br>
+		Customer nickname: $kehu.cusname
+		<br>
+		Availability: $gonghuo
+		<br>
+		Order No.: $dingdanhao
+		<br>
+		Trade name: $goods.xingming
+		<br>
+		Transportation Costs: $yunfee
+		<br>
+		Total cost: $num
+		<br>
+		<form action ="/propay" method="post">
+		<input value="$dingdanhao" style="display:none;" name="ordnum" / >
+		<input value="$pay" style="display:none;" name="pay" / >
+		<button onclick="first()"> NO Confirmation of pay</button>
+		<button type="submit">Confirmation of pay</button>
+		</form>
+		</strong>
+		</div>
+		</div>
+		</div>
+		</body>
+		
+
+
